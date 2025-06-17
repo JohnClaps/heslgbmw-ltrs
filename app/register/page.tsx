@@ -11,6 +11,7 @@ import { Label } from "@/components/ui/label"
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { registerUser } from "@/lib/actions"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function RegisterPage() {
   const router = useRouter()
@@ -67,7 +68,10 @@ export default function RegisterPage() {
       <Card className="w-full max-w-md">
         <CardHeader>
           <CardTitle className="text-2xl font-bold text-center">Register</CardTitle>
-          <CardDescription className="text-center">Create your account or update existing credentials</CardDescription>
+          <div className="flex justify-center mb-4">
+            <Image src="/logo.png" alt="Student-LTRS Logo" width={60} height={60} className="rounded-full" />
+          </div>
+          <CardDescription className="text-center">Create your account</CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
