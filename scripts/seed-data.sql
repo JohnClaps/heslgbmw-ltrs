@@ -22,23 +22,23 @@ INSERT INTO programs (institution_id, name, code, department, level, duration_ye
 -- Insert test users (password for all is 'password123')
 INSERT INTO users (name, email, password_hash, role, active, student_id, phone_number, date_of_birth, institution_name, employer_name) VALUES
 -- Students
-('John Banda', 'john.student@example.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'student', true, 'UNIMA/2023/001', '+265-999-123-456', '2000-05-15', NULL, NULL),
+('Alexinard Simbeye', 'alexinardsimbeye@gmil.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'student', true, 'BICT1920', '+265-99 085 196', '2000-05-15', NULL, NULL),
 ('Mary Phiri', 'mary.phiri@example.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'student', true, 'MUST/2023/002', '+265-888-234-567', '1999-08-22', NULL, NULL),
 ('Peter Mwale', 'peter.mwale@example.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'student', true, 'LUANAR/2023/003', '+265-777-345-678', '2001-03-10', NULL, NULL),
 ('Grace Tembo', 'grace.tembo@example.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'student', true, 'POLY/2023/004', '+265-666-456-789', '2000-11-28', NULL, NULL),
 ('James Nyirenda', 'james.nyirenda@example.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'student', true, 'MZUNI/2023/005', '+265-555-567-890', '1998-07-14', NULL, NULL),
 
 -- Admins/Lenders
-('Admin User', 'admin@loanbank.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin', true, NULL, '+265-111-111-111', NULL, NULL, NULL),
+('Admin User', 'admin@heslgb.org', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin', true, NULL, '+265-111-111-111', NULL, NULL, NULL),
 ('Sarah Kachale', 'sarah.admin@loanbank.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin', true, NULL, '+265-222-222-222', NULL, NULL, NULL),
 
 -- Employers
-('TechCorp Admin', 'admin@techcorp.com', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'employer', true, NULL, '+265-333-333-333', NULL, NULL, 'TechCorp Malawi'),
+('TechCorp Admin', 'admin@airtelmw.org', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'employer', true, NULL, '+265-333-333-333', NULL, NULL, 'TechCorp Malawi'),
 ('Standard Bank HR', 'hr@standardbank.mw', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'employer', true, NULL, '+265-444-444-444', NULL, NULL, 'Standard Bank Malawi'),
 ('Airtel Malawi HR', 'careers@airtel.mw', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'employer', true, NULL, '+265-555-555-555', NULL, NULL, 'Airtel Malawi'),
 
 -- Institutions
-('UNIMA Admin', 'admin@universityabc.edu', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'institution', true, NULL, '+265-666-666-666', NULL, 'University of Malawi', NULL),
+('MZUNI Admin', 'admin@mzuniversity.ac.mw', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'institution', true, NULL, '+265-666-666-666', NULL, 'Mzuzu University', NULL),
 ('MUST Admin', 'admin@must.ac.mw', '$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'institution', true, NULL, '+265-777-777-777', NULL, 'Malawi University of Science and Technology', NULL);
 
 -- Insert student enrollments
