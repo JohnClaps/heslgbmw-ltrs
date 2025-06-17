@@ -23,7 +23,7 @@ export default function AdminUsersPage() {
   const mockUsers = [
     {
       id: 1,
-      name: "Chisomo Banda",
+      name: "Alexinard Simbeye",
       email: "alexinardsimbeye@gmail.com",
       role: "student",
       active: true,
@@ -53,7 +53,7 @@ export default function AdminUsersPage() {
     },
     {
       id: 4,
-      name: "University of Malawi",
+      name: "Mzuzu University",
       email: "admin@mzuniversity.ac.mw",
       role: "institution",
       active: true,

@@ -40,22 +40,22 @@ interface Transaction {
 const users: User[] = [
   {
     id: 1,
-    name: "Chisomo Banda",
-    email: "john.student@example.com",
+    name: "Alexinard Simbeye",
+    email: "alexinardsimbeye@gmail.com",
     password_hash: "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi", // password123
     role: "student",
     active: true,
-    student_id: "UNIMA/2023/001",
+    student_id: "BICT1920",
     created_at: new Date().toISOString(),
   },
   {
     id: 2,
-    name: "Thandiwe Mwale",
-    email: "jane.student@example.com",
+    name: "Promise Chirwa",
+    email: "pchirwa@gmail.com",
     password_hash: "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi", // password123
     role: "student",
     active: true,
-    student_id: "MZUNI/2023/002",
+    student_id: "UNIMA/2021/002",
     created_at: new Date().toISOString(),
   },
   {
@@ -71,7 +71,7 @@ const users: User[] = [
   {
     id: 4,
     name: "Airtel Malawi",
-    email: "admin@techcorp.com",
+    email: "admin@airtelmw.org",
     password_hash: "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi", // password123
     role: "employer",
     active: true,
@@ -81,17 +81,17 @@ const users: User[] = [
   {
     id: 5,
     name: "University of Malawi",
-    email: "admin@universityabc.edu",
+    email: "admin@mzuniversity.ac.mw",
     password_hash: "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi", // password123
     role: "institution",
     active: true,
-    institution_name: "University of Malawi",
+    institution_name: "Mzuzu University",
     created_at: new Date().toISOString(),
   },
   {
     id: 6,
     name: "FDH Bank",
-    email: "admin@loanbank.com",
+    email: "admin@heslgb.org",
     password_hash: "$2a$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi", // password123
     role: "admin",
     active: true,

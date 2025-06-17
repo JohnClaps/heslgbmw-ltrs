@@ -11,7 +11,7 @@ INSERT INTO institutions (name, code, type, address, phone_number, email, websit
 
 -- Insert test programs
 INSERT INTO programs (institution_id, name, code, department, level, duration_years, tuition_fee_per_year, capacity, requirements) VALUES
-(1, 'Bachelor of Science in Computer Science', 'BSC-CS', 'Computer Science', 'Degree', 4, 850000, 100, 'MSCE with Mathematics and Physics'),
+(1, 'Bachelor of Science in Information and Communication Technology', 'BICT', 'Computer Science', 'Degree', 4, 850000, 100, 'MSCE with Mathematics and Physics'),
 (1, 'Bachelor of Commerce', 'BCOM', 'Commerce', 'Degree', 4, 750000, 150, 'MSCE with Mathematics'),
 (2, 'Bachelor of Engineering in Civil Engineering', 'BE-CIVIL', 'Engineering', 'Degree', 5, 950000, 80, 'MSCE with Mathematics, Physics, and Chemistry'),
 (2, 'Bachelor of Science in Information Technology', 'BSC-IT', 'Information Technology', 'Degree', 4, 800000, 120, 'MSCE with Mathematics'),
@@ -117,7 +117,7 @@ UPDATE loans SET remaining_amount = amount - 35000 WHERE id = 4;  -- Grace paid 
 INSERT INTO audit_logs (user_id, user_email, user_role, action, entity_type, entity_id, new_values) VALUES
 (6, 'admin@loanbank.com', 'admin', 'INSERT', 'loans', 1, '{"status": "Active", "amount": 1500000}'),
 (6, 'admin@loanbank.com', 'admin', 'UPDATE', 'loans', 1, '{"status": "Active", "approved_by": 6}'),
-(1, 'john.student@example.com', 'student', 'INSERT', 'transactions', 1, '{"amount": 50000, "type": "Payment"}');
+(1, 'alexinardsimbeye@gmail.com', 'student', 'INSERT', 'transactions', 1, '{"amount": 50000, "type": "Payment"}');
 
 -- Create some overdue payments for testing
 UPDATE payment_schedules SET 
