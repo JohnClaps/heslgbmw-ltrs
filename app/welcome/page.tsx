@@ -89,15 +89,15 @@ export default function WelcomePage() {
       role: "student",
       name: "Student Portal",
       icon: <GraduationCap className="h-5 w-5" />,
-      email: "john.student@example.com",
+      email: "alexinardsimbeye@gmail.com",
     },
-    { role: "admin", name: "Admin Dashboard", icon: <UserCheck className="h-5 w-5" />, email: "admin@loanbank.com" },
-    { role: "employer", name: "Employer Hub", icon: <Building className="h-5 w-5" />, email: "admin@techcorp.com" },
+    { role: "admin", name: "Admin Dashboard", icon: <UserCheck className="h-5 w-5" />, email: "gasmw@gmail.com" },
+    { role: "employer", name: "Employer Hub", icon: <Building className="h-5 w-5" />, email: "admin@airtelmw.org" },
     {
       role: "institution",
       name: "Institution Panel",
       icon: <BookOpen className="h-5 w-5" />,
-      email: "admin@universityabc.edu",
+      email: "admin@mzuniversity.ac.mw",
     },
   ]
 
@@ -224,7 +224,6 @@ export default function WelcomePage() {
                     {user.icon}
                   </div>
                   <CardTitle className="text-lg">{user.name}</CardTitle>
-                  <CardDescription className="text-sm">{user.email}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Button
@@ -238,11 +237,6 @@ export default function WelcomePage() {
                 </CardContent>
               </Card>
             ))}
-          </div>
-          <div className="text-center mt-8">
-            <p className="text-sm text-gray-500 animate-fade-in">
-              Demo Password: <code className="bg-gray-200 px-2 py-1 rounded">password123</code>
-            </p>
           </div>
         </div>
       </section>

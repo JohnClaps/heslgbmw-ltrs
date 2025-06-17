@@ -21,9 +21,9 @@ export function InstitutionProgramsContent({ user }: InstitutionProgramsContentP
   const programs = [
     {
       id: "PROG001",
-      name: "Bachelor of Science in Computer Science",
+      name: "Bachelor of Science in Information and Communication Technology",
       code: "BSC-CS",
-      department: "Computer Science",
+      department: "ICT",
       level: "Undergraduate",
       duration: 4,
       credits: 120,
@@ -53,7 +53,7 @@ export function InstitutionProgramsContent({ user }: InstitutionProgramsContentP
     },
     {
       id: "PROG003",
-      name: "Bachelor of Engineering",
+      name: "Bachelor of Electrical and Electronics Engineering",
       code: "BENG",
       department: "Engineering",
       level: "Undergraduate",
