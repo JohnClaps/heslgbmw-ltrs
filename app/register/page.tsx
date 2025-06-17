@@ -67,10 +67,10 @@ export default function RegisterPage() {
     <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <Card className="w-full max-w-md">
         <CardHeader>
-          <CardTitle className="text-2xl font-bold text-center">Register</CardTitle>
-          <div className="flex justify-center mb-4">
+        <div className="flex justify-center mb-4">
             <Image src="/logo.png" alt="Student-LTRS Logo" width={60} height={60} className="rounded-full" />
           </div>
+          <CardTitle className="text-2xl font-bold text-center">Register</CardTitle>
           <CardDescription className="text-center">Create your account</CardDescription>
         </CardHeader>
         <CardContent>
