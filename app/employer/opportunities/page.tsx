@@ -1,5 +1,5 @@
 import { Suspense } from "react"
-import { OpportunitiesContent } from "@/components/employer/opportunities"
+import { OpportunitiesContent } from "@/components/employer/tracking"
 import { getCurrentUser } from "@/lib/actions"
 
 export default async function OpportunitiesPage() {

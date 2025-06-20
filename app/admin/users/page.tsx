@@ -24,7 +24,7 @@ export default function AdminUsersPage() {
     {
       id: 1,
       name: "Alexinard Simbeye",
-      email: "alexinardsimbeye@gmail.com",
+      email: "alexinardmw@gmail.com",
       role: "student",
       active: true,
       student_id: "BICT3220",

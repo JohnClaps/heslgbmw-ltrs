@@ -64,11 +64,11 @@ export default function RegisterPage() {
   }
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-yellow-200 via-orange-100 to-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <Card className="w-full max-w-md">
         <CardHeader>
         <div className="flex justify-center mb-4">
-            <Image src="/logo.png" alt="Student-LTRS Logo" width={60} height={60} className="rounded-full" />
+            <Image src="/logo.jpg" alt="Student-LTRS Logo" width={60} height={60} className="rounded-full" />
           </div>
           <CardTitle className="text-2xl font-bold text-center">Register</CardTitle>
           <CardDescription className="text-center">Create your account</CardDescription>
@@ -79,6 +79,7 @@ export default function RegisterPage() {
               <Label htmlFor="name">Full Name</Label>
               <Input
                 id="name"
+                placeholder="Enter your full name"
                 type="text"
                 value={formData.name}
                 onChange={(e) => handleInputChange("name", e.target.value)}
@@ -90,6 +91,7 @@ export default function RegisterPage() {
               <Label htmlFor="email">Email</Label>
               <Input
                 id="email"
+                placeholder="Enter your email address"
                 type="email"
                 value={formData.email}
                 onChange={(e) => handleInputChange("email", e.target.value)}
@@ -101,6 +103,7 @@ export default function RegisterPage() {
               <Label htmlFor="userId">User ID</Label>
               <Input
                 id="userId"
+                placeholder="Enter your user ID e.g regNumber"
                 type="text"
                 value={formData.userId}
                 onChange={(e) => handleInputChange("userId", e.target.value)}
@@ -112,6 +115,7 @@ export default function RegisterPage() {
               <Label htmlFor="password">Password</Label>
               <Input
                 id="password"
+                placeholder="Enter your password"
                 type="password"
                 value={formData.password}
                 onChange={(e) => handleInputChange("password", e.target.value)}
@@ -123,6 +127,7 @@ export default function RegisterPage() {
               <Label htmlFor="confirmPassword">Confirm Password</Label>
               <Input
                 id="confirmPassword"
+                placeholder="Confirm your password"
                 type="password"
                 value={formData.confirmPassword}
                 onChange={(e) => handleInputChange("confirmPassword", e.target.value)}

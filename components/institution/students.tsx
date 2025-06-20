@@ -23,7 +23,7 @@ export function InstitutionStudentsContent({ user }: InstitutionStudentsContentP
     {
       id: "STU001",
       name: "Alexinard Simbeye",
-      email: "alexinardsimbeye@gmail.com",
+      email: "alexinardmw@gmail.com",
       program: "Information and Communication Technology",
       year: 4,
       gpa: null,

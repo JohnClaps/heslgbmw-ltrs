@@ -17,7 +17,7 @@ export function Navigation({ user }: NavigationProps) {
       <div className="container flex h-14 items-center">
         <div className="mr-4 flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <Image src="/logo.png" alt="Student-LTRS Logo" width={32} height={32} className="rounded-full" />
+            <Image src="/logo.jpg" alt="Student-LTRS Logo" width={32} height={32} className="rounded-full" />
             <span className="font-bold">Student-LTRS</span>
           </Link>
         </div>

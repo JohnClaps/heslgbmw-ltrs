@@ -1,5 +1,5 @@
 import { Suspense } from "react"
-import { SponsoredStudentsContent } from "@/components/employer/sponsored-students"
+import { SponsoredStudentsContent } from "@/components/employer/loan-beneficiaries"
 import { getCurrentUser } from "@/lib/actions"
 
 export default async function SponsoredStudentsPage() {

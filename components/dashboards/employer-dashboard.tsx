@@ -19,11 +19,11 @@ export function EmployerDashboard({ user, data }: EmployerDashboardProps) {
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-3xl font-bold tracking-tight">Employer Dashboard</h1>
-            <p className="text-muted-foreground">Manage student sponsorships and investments</p>
+            <p className="text-muted-foreground">Manage employed loan beneficiaries</p>
           </div>
           <div className="flex items-center space-x-2">
             <Button variant="outline">Export Report</Button>
-            <Button className="bg-orange-600 hover:bg-orange-700">Sponsor Student</Button>
+            <Button className="bg-orange-600 hover:bg-orange-700">Track Student</Button>
           </div>
         </div>
 
@@ -31,7 +31,7 @@ export function EmployerDashboard({ user, data }: EmployerDashboardProps) {
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Sponsored Students</CardTitle>
+              <CardTitle className="text-sm font-medium">Tracked Students</CardTitle>
               <Users className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
@@ -42,7 +42,7 @@ export function EmployerDashboard({ user, data }: EmployerDashboardProps) {
 
           <Card>
             <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-              <CardTitle className="text-sm font-medium">Total Investment</CardTitle>
+              <CardTitle className="text-sm font-medium">Total PAYE</CardTitle>
               <DollarSign className="h-4 w-4 text-muted-foreground" />
             </CardHeader>
             <CardContent>
@@ -58,7 +58,7 @@ export function EmployerDashboard({ user, data }: EmployerDashboardProps) {
             </CardHeader>
             <CardContent>
               <div className="text-2xl font-bold">{data?.graduates_hired || 0}</div>
-              <p className="text-xs text-muted-foreground">From sponsored students</p>
+              <p className="text-xs text-muted-foreground">From tracked students</p>
             </CardContent>
           </Card>
 
@@ -76,15 +76,15 @@ export function EmployerDashboard({ user, data }: EmployerDashboardProps) {
 
         <Tabs defaultValue="students" className="space-y-4">
           <TabsList>
-            <TabsTrigger value="students">Sponsored Students</TabsTrigger>
-            <TabsTrigger value="opportunities">Opportunities</TabsTrigger>
+            <TabsTrigger value="students">Tracked Students</TabsTrigger>
+            <TabsTrigger value="opportunities">Loan Beneficiaries</TabsTrigger>
             <TabsTrigger value="analytics">Analytics</TabsTrigger>
           </TabsList>
 
           <TabsContent value="students" className="space-y-4">
             <Card>
               <CardHeader>
-                <CardTitle>Sponsored Students</CardTitle>
+                <CardTitle>Tracked Students</CardTitle>
                 <CardDescription>Students you are currently sponsoring</CardDescription>
               </CardHeader>
               <CardContent>
@@ -330,7 +330,7 @@ export function EmployerDashboard({ user, data }: EmployerDashboardProps) {
 
                       <div className="flex space-x-2 pt-2">
                         <Button size="sm" className="flex-1 bg-orange-600 hover:bg-orange-700">
-                          Sponsor Student
+                          Track Student
                         </Button>
                         <Button variant="outline" size="sm">
                           View Profile

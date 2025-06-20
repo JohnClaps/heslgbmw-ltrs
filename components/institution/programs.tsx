@@ -22,7 +22,7 @@ export function InstitutionProgramsContent({ user }: InstitutionProgramsContentP
     {
       id: "PROG001",
       name: "Bachelor of Science in Information and Communication Technology",
-      code: "BSC-CS",
+      code: "BICT",
       department: "ICT",
       level: "Undergraduate",
       duration: 4,

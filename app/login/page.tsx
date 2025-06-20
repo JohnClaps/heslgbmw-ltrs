@@ -17,7 +17,7 @@ export default function LoginPage() {
   const router = useRouter()
   const [formData, setFormData] = useState({
     email: "",
-    password: "password123",
+    password: "",
   })
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState("")
@@ -45,10 +45,10 @@ export default function LoginPage() {
       <Card className="w-full max-w-md shadow-xl">
         <CardHeader className="text-center">
           <div className="flex justify-center mb-4">
-            <Image src="/logo.png" alt="Student-LTRS Logo" width={60} height={60} className="rounded-full" />
+            <Image src="/logo.jpg" alt="Student-LTRS Logo" width={60} height={60} className="rounded-full" />
           </div>
           <CardTitle className="text-2xl font-bold">Welcome Back</CardTitle>
-          <CardDescription>Sign in to your Student-LTRS account</CardDescription>
+          <CardDescription>Sign in to your Account</CardDescription>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -56,6 +56,7 @@ export default function LoginPage() {
               <Label htmlFor="email">Email</Label>
               <Input
                 id="email"
+                placeholder="Enter your email"
                 type="email"
                 value={formData.email}
                 onChange={(e) => setFormData((prev) => ({ ...prev, email: e.target.value }))}
@@ -67,6 +68,7 @@ export default function LoginPage() {
               <Label htmlFor="password">Password</Label>
               <Input
                 id="password"
+                placeholder="Enter your password"
                 type="password"
                 value={formData.password}
                 onChange={(e) => setFormData((prev) => ({ ...prev, password: e.target.value }))}
@@ -93,7 +95,7 @@ export default function LoginPage() {
                 Don't have an account? Register
               </Link>
 
-              <Link href="/welcome" className="text-sm text-gray-600 hover:text-orange-600 block">
+              <Link href="/home" className="text-sm text-gray-600 hover:text-orange-600 block">
                 ← Back to Welcome Page
               </Link>
             </div>

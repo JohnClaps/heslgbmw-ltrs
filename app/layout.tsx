@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   title: "Student-LTRS",
   description: "Empowering students with transparent, secure, and efficient educational loan management.",
   icons: {
-    icon: "/logo.png",
-    shortcut: "/logo.png",
-    apple: "/logo.png",
+    icon: "/logo.jpg",
+    shortcut: "/logo.jpg",
+    apple: "/logo.jpg",
   },
     generator: 'v0.dev'
 }

@@ -69,7 +69,7 @@ export function SidebarLayout({ children, user }: SidebarLayoutProps) {
           {
             href: "/loans/new",
             icon: GraduationCap,
-            title: "Apply for Loan",
+            title: "Manage Account",
             roles: ["student"],
           },
         ]
@@ -107,13 +107,13 @@ export function SidebarLayout({ children, user }: SidebarLayoutProps) {
           {
             href: "/employer/students",
             icon: Users,
-            title: "Sponsored Students",
+            title: "Loan Beneficiaries",
             roles: ["employer"],
           },
           {
             href: "/employer/opportunities",
             icon: Building,
-            title: "Opportunities",
+            title: "Tracking",
             roles: ["employer"],
           },
         ]
@@ -145,7 +145,7 @@ export function SidebarLayout({ children, user }: SidebarLayoutProps) {
       {/* Logo */}
       <div className="flex h-16 items-center border-b px-4">
         <Link href="/" className="flex items-center gap-2 font-semibold">
-          <Image src="/logo.png" alt="Student-LTRS Logo" width={32} height={32} className="rounded-full" />
+          <Image src="/logo.jpg" alt="Student-LTRS Logo" width={32} height={32} className="rounded-full" />
           <div className="flex flex-col">
             <span className="text-sm font-bold">Student-LTRS</span>
             <span className="text-xs text-muted-foreground">Loan Management</span>

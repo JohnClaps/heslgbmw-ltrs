@@ -26,7 +26,8 @@ export function StudentDashboard({ user, loans, stats }: StudentDashboardProps) 
     setShowPaymentModal(true)
   }
 
-  // Mock rewards data - in real app this would come from blockchain
+  // Take Note that these would come from blockchain after full implementation
+  // For now, we are using hardcoded data for demonstration purposes
   const rewards = [
     {
       id: 1,
